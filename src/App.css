@@ -1,18 +1,18 @@
 .App {
   text-align: center;
+  background-color: #DBBEBB;
+  margin: 0;
 }
 
 .App-header {
   text-align: center;
-  font-family: 'Tangerine', serif;
-  border: solid black 1px;
   font-size: 2em;
+  font-family: fantasy; 
+  font-style: bold;
+  
+
 }
 
-
-.färg {
-  color:  #d0f0c0;
-}
 
 .länk {
   text-align: center;
@@ -26,9 +26,11 @@ height: 250 px;
 .rubriker {
 text-align: center;
 font-size: 50px;
-font-family: 'Tangerine', serif;
+font-family: fantasy; 
 font-weight: bold;
 }
+
+
 
 @keyframes App-logo-spin {
   from {

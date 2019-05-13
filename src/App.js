@@ -54,7 +54,8 @@ render() {
   return (
     <div className="App">
     <header className="App-header">
-    <h2> Välkommmen till senaste nyheterna inom sjukvård och hälsa</h2>
+    <h1> Hälsosnack</h1>
+    <p> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </p>
     
     </header>
     <body>
