@@ -52,8 +52,24 @@ this.setState({ articles: jsondata.articles })
 
 render() {
   return (
+    <div className="App">
+    <header className="App-header">
+    <h2> Välkommmen till senaste nyheterna inom sjukvård och hälsa</h2>
+    
+    </header>
+    <body>
+
+    </body>
     <Nyhetslista  
-    minaArtiklar={this.state.articles}/>) 
+    minaArtiklar={this.state.articles} />
   }}
+  <footer className="App-footer">
+  <p>Johanna Håkansson 2019</p>
+  </footer>
+  </div>
+
+  );
+}
+}
   
 export default App;
