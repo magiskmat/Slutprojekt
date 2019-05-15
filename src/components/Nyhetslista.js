@@ -6,7 +6,7 @@ function Nyhetslista(props) {
       {props.minaArtiklar.map(function (item, index) {
          return <Nyhetsartikel
           minArtikel={item} 
-          key={'artikel${index}'}
+          key={`artikel${index}`}
           />
       })}
        </section>);

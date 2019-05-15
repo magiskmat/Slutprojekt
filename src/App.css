@@ -1,14 +1,14 @@
 .App {
   text-align: center;
   background-color: #DBBEBB;
-  margin: 0;
+  padding: 1px;
 }
 
 .App-header {
   text-align: center;
   font-size: 2em;
   font-family: fantasy; 
-  font-style: bold;
+ 
   
 
 }
@@ -19,8 +19,8 @@
 }
 .bilder {
 text-align: center;
-width: 200 px;
-height: 250 px;
+/* width: 200px;
+height: 250px; */
 }
 
 .rubriker {
@@ -32,11 +32,3 @@ font-weight: bold;
 
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
