@@ -54,9 +54,7 @@ return (
 <Nyhetslista  
 minaArtiklar={this.state.articles} />
 
-<footer className="App-footer">
-<p>Johanna Håkansson 2019</p>
-</footer>
+
 </div>
 
 );

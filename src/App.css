@@ -6,14 +6,16 @@
 
 .App-header {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   font-family: fantasy; 
- 
-  
+ }
+
+ .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 5px solid lightgrey;
 
 }
-
-
 .länk {
   text-align: center;
 }
@@ -25,7 +27,7 @@ height: 250px; */
 
 .rubriker {
 text-align: center;
-font-size: 50px;
+font-size: 20px;
 font-family: fantasy; 
 font-weight: bold;
 }
