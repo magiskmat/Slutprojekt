@@ -8,17 +8,7 @@ class App extends Component {
 constructor(props) {
 super(props);
 this.state = {
-articles: [
-{
-urlToImage: "https://source.unsplash.com/random/200x125/?cat",
-title:"Testnyhet 1",
-description:"Beskrivning av testnyheten",
-},
-{
-urlToImage: "https://source.unsplash.com/random/200x125/?cat", 
-title:"Testnyhet 2",
-description:"Beskrivning av testnyheten",
-}]};
+articles: []};
 }
 
 componentDidMount() {

@@ -8,6 +8,7 @@
   text-align: center;
   font-size: 1em;
   font-family: fantasy; 
+  border: 5px solid lightgrey;
  }
 
  .grid {
@@ -21,8 +22,8 @@
 }
 .bilder {
 text-align: center;
-/* width: 200px;
-height: 250px; */
+width: 470px;
+height: 200 px;
 }
 
 .rubriker {
