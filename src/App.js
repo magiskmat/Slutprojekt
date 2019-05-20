@@ -37,7 +37,7 @@ return (
 <div className="App">
 <header className="App-header">
 <h1> Hälsosnack</h1>
-<p> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </p>
+<h4> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </h4>
 
 </header>
 
