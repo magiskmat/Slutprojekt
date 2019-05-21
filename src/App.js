@@ -44,24 +44,10 @@ description: "Något gick fel. $(error.message)",
 }
 
 render() {
-    const {
-        user,
-        signOut,
-        signInWithGoogle,
-      } = this.props;
 return (
 <div className="App">
 <header className="App-header">
 
-user 
-? <p>Hello, {user.displayName}</p>
-: <p>Please sign in.</p>
-      }
-      {
-        user
-          ? <button onClick={signOut}>Sign out</button>
-          : <button onClick={signInWithGoogle}>Sign in with Google</button>
-      }
 <h1> Hälsosnack</h1>
 <h4> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </h4>
 
@@ -72,6 +58,8 @@ minaArtiklar={this.state.articles} />
 
 
 </div>
+
+
 
 );
 }
