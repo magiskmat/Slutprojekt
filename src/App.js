@@ -8,15 +8,6 @@ import firebaseConfig from './firebaseConfig';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const firebaseAppAuth = firebaseApp.auth();
-const providers = {
-  googleProvider: new firebase.auth.GoogleAuthProvider(),
-};
-
-
-
-
-
 class App extends Component {
 constructor(props) {
 super(props);
@@ -78,6 +69,11 @@ minaArtiklar={this.state.articles} />
 );
 }
 }
+
+const firebaseAppAuth = firebaseApp.auth();
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
 
 
 export default withFirebaseAuth({
