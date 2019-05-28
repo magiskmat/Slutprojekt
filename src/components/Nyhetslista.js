@@ -10,6 +10,7 @@ function Nyhetslista(props) {
           />
       })}
       </section>);
+      //funktion och array som returnerar nyhetsartiklarna
    }
 
 

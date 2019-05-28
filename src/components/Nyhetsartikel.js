@@ -10,7 +10,7 @@ function Nyhetsartikel (props){
       <a href={props.minArtikel.url}  target="">Läs mer..</a>
         </article> 
         </div>
-        
+        ////funktion som returnerar nyhetsartiklarnas bilder, rubriker och beskrivningar.
     );
     }
 

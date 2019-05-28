@@ -8,11 +8,16 @@ import firebaseConfig from './firebaseConfig';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
+
 class App extends Component {
 constructor(props) {
 super(props);
+//kör den versionen av constructor som finns i Reacts components
 this.state = {
+  //egen komponent
 articles: []};
+
+
 }
 
 componentDidMount() {
@@ -35,6 +40,7 @@ description: "Något gick fel. $(error.message)",
 });
 })
 }
+//felmeddelande
 
 render() {
   const {
@@ -42,6 +48,7 @@ render() {
     signOut,
     signInWithGoogle,
    } = this.props;
+   //funktion för att firebase ska fungera
 return (
 <div className="App">
 <header className="App-header">
@@ -55,16 +62,18 @@ return (
        user
          ? <button onClick={signOut}>Sign out</button>
          : <button onClick={signInWithGoogle}>Sign in with Google</button>
-     }
+     //Knapp för att logga in och ut med Google
+    }
+      
  </div>
-
+ 
 <h1> Hälsosnack</h1>
 <h4> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </h4>
 </header>
 <Nyhetslista  
 minaArtiklar={this.state.articles} />
  </div>
-
+//skickar ner props och skapar eget attribut
 
 );
 }
@@ -73,6 +82,7 @@ minaArtiklar={this.state.articles} />
 const firebaseAppAuth = firebaseApp.auth();
 const providers = {
   googleProvider: new firebase.auth.GoogleAuthProvider(),
+  //Firebase Authentication
 };
 
 
