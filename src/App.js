@@ -8,13 +8,12 @@ import firebaseConfig from './firebaseConfig';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-
+//kör den versionen av constructor som finns i Reacts components
 class App extends Component {
 constructor(props) {
 super(props);
-//kör den versionen av constructor som finns i Reacts components
+//egen komponent
 this.state = {
-  //egen komponent
 articles: []};
 
 
@@ -32,6 +31,7 @@ return response.json()
 //gör något med json-objektet
 this.setState({ articles: jsondata.articles })
 }).catch(error =>{
+  //visa felmeddelande om det blir något fel med setState
 this.setState({ 
 articles: [{
 urlToImage: "fejk.jpg",
@@ -40,20 +40,22 @@ description: "Något gick fel. $(error.message)",
 });
 })
 }
-//felmeddelande
 
+ //funktion för att firebase ska fungera
 render() {
   const {
     user,
     signOut,
     signInWithGoogle,
    } = this.props;
-   //funktion för att firebase ska fungera
+  
 return (
 <div className="App">
 <header className="App-header">
 <div>
+  
      {
+       //Knapp för att logga in och ut med Google
        user
          ? <p>Hello, {user.displayName}</p>
          : <p>Please sign in.</p>
@@ -62,7 +64,7 @@ return (
        user
          ? <button onClick={signOut}>Sign out</button>
          : <button onClick={signInWithGoogle}>Sign in with Google</button>
-     //Knapp för att logga in och ut med Google
+     
     }
       
  </div>
@@ -70,19 +72,21 @@ return (
 <h1> Hälsosnack</h1>
 <h4> Här hittar du de allra senaste svenska nyheterna inom sjukvård och hälsa </h4>
 </header>
+
 <Nyhetslista  
+//skickar ner props och skapar eget attribut
 minaArtiklar={this.state.articles} />
  </div>
-//skickar ner props och skapar eget attribut
+
 
 );
 }
 }
-
+  //Firebase Authentication funktion
 const firebaseAppAuth = firebaseApp.auth();
 const providers = {
   googleProvider: new firebase.auth.GoogleAuthProvider(),
-  //Firebase Authentication
+
 };
 
 
