@@ -42,7 +42,7 @@ class App extends Component {
       })
   }
 
-  //funktion för att firebase ska fungera
+  //funktion för att firebase ska fungera rätt
   render() {
     const {
       user,
