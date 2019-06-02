@@ -1,7 +1,7 @@
 import React from 'react';
 import Nyhetsartikel from './Nyhetsartikel';
 
- //funktion och array som returnerar nyhetsartiklarna
+ //funktion som returnerar nyhetsartiklarna
 function Nyhetslista(props) {
    return (<section className="grid">
       {props.minaArtiklar.map(function (item, index) {
